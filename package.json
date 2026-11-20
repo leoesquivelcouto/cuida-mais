@@ -7,11 +7,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db:setup": "prisma db push"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/seu-usuario/seu-repositorio.git"
+    "url": "git+https://github.com/leoesquivelcouto/cuida-mais.git"
   },
   "keywords": [],
   "author": "",

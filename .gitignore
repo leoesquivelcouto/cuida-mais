@@ -19,3 +19,8 @@ prisma/dev.db
 prisma/dev.db-journal
 
 repomix-output.xml
+# segredos e banco local (nunca versionar)
+.env
+.env*.local
+*.db
+*.db-journal
