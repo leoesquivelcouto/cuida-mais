@@ -5,7 +5,7 @@ import { NextResponse } from "next/server";
 import { requireSession } from "@/lib/auth";
 
 // Função para buscar os dados de um paciente e seu histórico de registros
-export async function GET(req: Request, { params }: { params: { id: string } }) {
+export async function GET(req: Request, { params }: { params: Promise<{ id: string }> }) {
   try {
     // Valida se o usuário está autenticado
     const session = await requireSession();
@@ -44,7 +44,7 @@ export async function GET(req: Request, { params }: { params: { id: string } }) 
 }
 
 // Função para remover um paciente do banco de dados
-export async function DELETE(req: Request, { params }: { params: { id: string } }) {
+export async function DELETE(req: Request, { params }: { params: Promise<{ id: string }> }) {
   try {
     // Valida se o usuário está autenticado
     const session = await requireSession();
